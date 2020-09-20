@@ -3,6 +3,7 @@ const cors = require('cors');
 
 // Route files
 const tableRouter = require('./routes/table');
+const dbRouter = require('./routes/db');
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(express.json());
 
 // Routes
 app.use('/table', tableRouter);
+app.use('/db',dbRouter);
 
 
 // Listen to PORT
