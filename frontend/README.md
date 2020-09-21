@@ -1,1 +1,1 @@
-# Data Analyser Frontend
+# Table Operations Frontend
