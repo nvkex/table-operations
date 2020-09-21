@@ -10,22 +10,27 @@ exports.collectionList = async(req, res) => {
 
 }
 
-exports.joinCollections = async(req,res) => {
-    const collection1 = req.body.coll1;
+exports.listFields = (req,res) => {
+    const collection = req.body.coll;
 
     const tempSchema = new mongoose.Schema({},{
         strict: false,
         strictQuery: false
     });
 
-    const tempModel = mongoose.model(collection1, tempSchema);
+    const tempModel = mongoose.model(collection, tempSchema);
 
     tempModel.findOne({})
     .then(data => {
-        console.log(data);
-        res.send(Object.keys(data._doc));
+        const fields = Object.keys(data._doc)
+        res.send(fields);
     })
     .catch(err => {
-        console.log(err)
+        console.log(err);
+        res.send({error: err});
     })
+}
+
+exports.joinCollections = (req, res) => {
+
 }
