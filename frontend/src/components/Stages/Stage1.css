@@ -1,0 +1,43 @@
+.stage1{
+    transition: 0.4s;
+    padding: 40px 10px;
+    background-color: rgba(0, 0, 0, 0.034);
+    width: 300px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.content{
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+    padding: 0px 0;
+    max-height: 0;
+}
+
+.content *{
+    width: 100%;
+}
+
+.content button{
+    margin-bottom:10px;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 4px;
+}
+
+.content input{
+    margin: 4px 0;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 4px;
+}
+
+.collapsible{
+    padding: 4px 10px;
+    width: 100%;
+    text-align: left;
+    border: 0px solid lightgrey;
+    outline: none;
+}
