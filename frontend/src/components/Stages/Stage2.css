@@ -1,10 +1,21 @@
 .stage2{
     transition: 0.4s;
-    padding: 40px 10px;
+    padding: 20px 10px;
     background-color: rgba(0, 0, 0, 0.034);
     width: 300px;
     height:300px;
     display: flex;
     flex-direction: column;
     margin: 10px;
+    overflow: auto;
+}
+.stage2 table{
+    width: 100%;
+}
+.stage2 table tr td{
+    padding: 2px 2px 2px 10px;
+}
+
+.stage2 table tr:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.05);
 }

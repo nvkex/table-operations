@@ -10,3 +10,7 @@ body {
 * {
   box-sizing: border-box;
 }
+
+label{
+  margin: 2px;
+}
