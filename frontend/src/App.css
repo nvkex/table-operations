@@ -1,3 +1,5 @@
 .stage-container{
     padding: 40px;
+    display: flex;
+    
 }
