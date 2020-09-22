@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import Stage1 from './components/Stage1';
+import Stage1 from './components/Stages/Stage1';
+import Stage2 from './components/Stages/Stage2';
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
 
         <div className="stage-container">
           <Stage1 />
+          <Stage2 />
         </div>
 
       </div>
