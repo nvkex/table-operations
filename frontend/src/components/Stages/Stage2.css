@@ -1,0 +1,10 @@
+.stage2{
+    transition: 0.4s;
+    padding: 40px 10px;
+    background-color: rgba(0, 0, 0, 0.034);
+    width: 300px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
